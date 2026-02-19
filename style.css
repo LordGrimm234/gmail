@@ -1,76 +1,35 @@
-/* Base Styles */
-body {
-    background-color: #1f1f1f;
+/* This covers the entire screen with a dim background */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6); /* Dimmed background */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
-    font-family: 'Roboto', 'Segoe UI', sans-serif;
+    z-index: 1000;
 }
 
-/* Google-style Card */
+/* This is the actual Google-style pop-up box */
 .google-card {
     background: #131314;
     color: white;
     padding: 48px 40px;
     border-radius: 28px;
     width: 400px;
+    height: auto;
     text-align: center;
     border: 1px solid #444;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.8);
+    position: relative;
 }
 
-.g-input {
-    width: 100%;
-    padding: 16px;
-    margin-bottom: 24px;
-    background: transparent;
-    border: 1px solid #8e918f;
-    border-radius: 4px;
-    color: white;
-    box-sizing: border-box;
-    font-size: 16px;
-}
-
-.g-input:focus {
-    border: 2px solid #a8c7fa;
-    outline: none;
-}
-
-/* Buttons */
-.btn-next {
-    background: #a8c7fa;
-    color: #062e6f;
-    border: none;
-    padding: 10px 24px;
-    border-radius: 20px;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-.text-link {
-    background: none;
-    border: none;
-    color: #a8c7fa;
-    cursor: pointer;
-    font-weight: 500;
-}
-
-.footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
-}
-
-.highlight-email {
-    color: #a8c7fa;
-    margin-bottom: 15px;
-}
-
-/* Game Canvas */
-#gameCanvas {
-    background: #fff;
-    border-radius: 8px;
-    border: 4px solid #444;
+/* Base body background (your website content) */
+body {
+    background: url('your-brand-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
