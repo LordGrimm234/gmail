@@ -1,0 +1,76 @@
+/* Base Styles */
+body {
+    background-color: #1f1f1f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+}
+
+/* Google-style Card */
+.google-card {
+    background: #131314;
+    color: white;
+    padding: 48px 40px;
+    border-radius: 28px;
+    width: 400px;
+    text-align: center;
+    border: 1px solid #444;
+}
+
+.g-input {
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 24px;
+    background: transparent;
+    border: 1px solid #8e918f;
+    border-radius: 4px;
+    color: white;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.g-input:focus {
+    border: 2px solid #a8c7fa;
+    outline: none;
+}
+
+/* Buttons */
+.btn-next {
+    background: #a8c7fa;
+    color: #062e6f;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.text-link {
+    background: none;
+    border: none;
+    color: #a8c7fa;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.highlight-email {
+    color: #a8c7fa;
+    margin-bottom: 15px;
+}
+
+/* Game Canvas */
+#gameCanvas {
+    background: #fff;
+    border-radius: 8px;
+    border: 4px solid #444;
+}
